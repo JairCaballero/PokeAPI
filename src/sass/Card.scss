@@ -1,0 +1,40 @@
+@use 'variables' as v;
+
+.card {
+  width: 200px;
+  height: 250px;
+  border-radius: 16px;
+  background-color: v.$blue;
+  box-shadow: 3px 3px 10px;
+  padding: 48px 12px 12px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+
+  &__name {
+    background-color: v.$red;
+    text-align: center;
+    color: v.$blanco;
+    width: 140px;
+    position: absolute;
+    top: 0;
+    margin-left: 60px;
+    padding: 6px 12px;
+  }
+
+  &__circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: v.$yellow;
+    position: absolute;
+    top: 56px;
+    left: 24px;
+    z-index: -1;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

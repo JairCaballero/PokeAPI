@@ -1,0 +1,64 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card__container {
+  display: flex;
+  width: 500px;
+  height: 300px;
+  margin-top: 80px;
+  position: relative;
+
+  & .card:nth-child(1) {
+    position: absolute;
+    left: 0;
+    z-index: 30;
+    transition: 100ms;
+    transform: rotate(-5deg) translateY(10px);
+
+    &:hover {
+      transform: rotate(-5deg) translateY(0px);
+    }
+  }
+
+  & .card:nth-child(2) {
+    position: absolute;
+    left: 150px;
+    z-index: 20;
+    transition: 100ms;
+
+    &:hover {
+      transform: translateY(10px);
+    }
+  }
+
+  & .card:nth-child(3) {
+    position: absolute;
+    left: 300px;
+    z-index: 10;
+    transition: 100ms;
+    transform: rotate(5deg) translateY(10px);
+
+    &:hover {
+      transform: rotate(5deg) translateY(0px);
+    }
+  }
+}
+
+.buttons-container {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_1 {
+  transform: rotate(5.5deg) translate(160px);
+}
+
+.card_2 {
+  transform: rotate(4deg) translate(70px);
+}
